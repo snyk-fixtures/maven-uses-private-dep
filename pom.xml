@@ -1,0 +1,26 @@
+<project>
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.snyk.example</groupId>
+  <artifactId>uses-private-package</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Uses a Private Package</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>io.snyk.example</groupId>
+      <artifactId>private-package</artifactId>
+      <version>1.0.0</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>io.snyk.internal</groupId>
+      <artifactId>internal-package</artifactId>
+      <version>1.0.0</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+
+</project>
